@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Multiplier" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMg-yr-Gvm">
+                                <rect key="frame" x="35" y="89" width="305" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cmB-Cz-2kj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBm-pE-2U6">
+                                <rect key="frame" x="37" y="152" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d1H-iP-c99"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-7w-s58">
+                                <rect key="frame" x="142" y="231" width="90" height="27"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.71372549019999998" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="MfU-td-5YR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Multiply">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplyNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qq9-Np-oGP"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result appears here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Ou-xi-LWx">
+                                <rect key="frame" x="67" y="279" width="240" height="73"/>
+                                <color key="backgroundColor" red="0.77240513392857146" green="0.88316388865714279" blue="0.74239467482857135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="i3g-ZI-6rt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eNy-7w-s58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ao-fb-Trc"/>
+                            <constraint firstItem="QMg-yr-Gvm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="6Al-9o-fi4"/>
+                            <constraint firstAttribute="trailing" secondItem="QMg-yr-Gvm" secondAttribute="trailing" constant="35" id="F30-0u-bCM"/>
+                            <constraint firstItem="eNy-7w-s58" firstAttribute="top" secondItem="OBm-pE-2U6" secondAttribute="bottom" constant="49" id="FkI-VD-WrJ"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ou-xi-LWx" secondAttribute="trailing" constant="68" id="Gaa-oc-L5L"/>
+                            <constraint firstItem="OBm-pE-2U6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="37" id="KHz-yl-SZI"/>
+                            <constraint firstItem="QMg-yr-Gvm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KOX-PP-HQw"/>
+                            <constraint firstItem="eNy-7w-s58" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="142" id="NJc-fD-lcm"/>
+                            <constraint firstAttribute="trailing" secondItem="OBm-pE-2U6" secondAttribute="trailing" constant="38" id="QhU-b1-tHd"/>
+                            <constraint firstItem="1Ou-xi-LWx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="U3s-18-abW"/>
+                            <constraint firstItem="QMg-yr-Gvm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="35" id="aN3-mk-8ZL"/>
+                            <constraint firstItem="1Ou-xi-LWx" firstAttribute="top" secondItem="eNy-7w-s58" secondAttribute="bottom" constant="21" id="eNa-yH-XZg"/>
+                            <constraint firstItem="OBm-pE-2U6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ft5-0i-43f"/>
+                            <constraint firstAttribute="trailing" secondItem="eNy-7w-s58" secondAttribute="trailing" constant="143" id="i2l-5p-QSv"/>
+                            <constraint firstItem="1Ou-xi-LWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSh-ra-Uqq"/>
+                            <constraint firstItem="OBm-pE-2U6" firstAttribute="top" secondItem="QMg-yr-Gvm" secondAttribute="bottom" constant="33" id="ycz-rh-aBU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="num1TxtField" destination="QMg-yr-Gvm" id="m5g-3q-rov"/>
+                        <outlet property="num2TxtField" destination="OBm-pE-2U6" id="gxr-KT-B3g"/>
+                        <outlet property="resulTxtView" destination="1Ou-xi-LWx" id="J5B-fV-9XW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
